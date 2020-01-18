@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(AmountAssist());
 
-class MyApp extends StatelessWidget {
+class AmountAssist extends StatefulWidget {
+  @override
+  _AmountAssistState createState() => _AmountAssistState();
+}
+
+class _AmountAssistState extends State<AmountAssist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,4 +20,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
