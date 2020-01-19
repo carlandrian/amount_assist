@@ -1,6 +1,26 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(AmountAssist());
+void main() => runApp(
+      MaterialApp(
+        home: AmountAssistPage(),
+      ),
+    );
+
+class AmountAssistPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
+      appBar: AppBar(
+        title: Text('Amount Assist'),
+        backgroundColor: Colors.red,
+      ),
+      body: Container(
+        child: AmountAssist(),
+      ),
+    );
+  }
+}
 
 class AmountAssist extends StatefulWidget {
   @override
@@ -10,15 +30,9 @@ class AmountAssist extends StatefulWidget {
 class _AmountAssistState extends State<AmountAssist> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Amount Assist'),
-      ),
-      body: Container(
-        child: Text('Test'),
-      ),
+    return Container(
+      child: Text('Text'),
     );
   }
 }
-
 
